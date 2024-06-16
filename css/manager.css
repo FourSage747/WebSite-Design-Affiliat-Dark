@@ -681,10 +681,28 @@ main {
 .manager_offers .manager_offers_ul .manager_offers_ul_li:first-child ul li:nth-child(4) {
   margin-right: 30px;
 }
+.manager_offers .manager_offers_ul .manager_offers_ul_li:nth-child(2) ul li:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 7px;
+  background-color: #0e1218;
+  color: white;
+}
 .manager_offers .manager_offers_ul .manager_offers_ul_li ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.manager_offers .manager_offers_ul .manager_offers_ul_li:nth-child(n+3) li:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #2e65f3;
+  padding: 7px;
+  color: white;
 }
 
 footer {

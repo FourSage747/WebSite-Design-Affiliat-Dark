@@ -14,6 +14,16 @@
         b {
           @include font(300, 10px);
         }
+        li:nth-child(7),
+        li:nth-child(8) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 20px;
+          background-color: #2e65f3;
+          padding: 7px;
+          color: white;
+        }
       }
     }
   }
