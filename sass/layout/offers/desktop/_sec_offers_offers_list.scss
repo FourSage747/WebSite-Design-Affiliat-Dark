@@ -1,0 +1,20 @@
+.offers_offers_list {
+  .offers_offers_list_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .offers_offers_list_li {
+      padding: 10px;
+      border-radius: 20px;
+      background: #0e1218;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        b {
+          @include font(300, 10px);
+        }
+      }
+    }
+  }
+}

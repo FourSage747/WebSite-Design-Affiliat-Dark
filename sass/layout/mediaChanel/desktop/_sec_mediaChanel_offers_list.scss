@@ -1,0 +1,72 @@
+.mediaChanel_offers_list {
+  .mediaChanel_offers_list_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .mediaChanel_offers_list_li {
+      padding: 10px;
+      border-radius: 20px;
+      background: #0e1218;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        b {
+          @include font(300, 10px);
+        }
+        li:nth-child(5) {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 20px;
+          background-color: #2e65f3;
+          padding: 7px 20px;
+          color: white;
+          div {
+            overflow: hidden;
+            opacity: 0;
+            max-height: 0;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            position: absolute;
+            top: -100%;
+            padding: 5px;
+            background-color: #181a1e;
+            box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+            color: white;
+            &.show {
+              opacity: 1;
+              max-height: 1000px;
+            }
+            span {
+              border-radius: 10px;
+              padding: 5px;
+            }
+            svg {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.backdrop {
+  .modal {
+    .modal_desktop_menu {
+      display: none;
+    }
+    form {
+      ul {
+        button {
+          padding: 10px 22px;
+        }
+      }
+    }
+  }
+}
